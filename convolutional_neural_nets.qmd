@@ -332,7 +332,7 @@ $[1, 0, 2, 0, 1]$.
 
 The next figure shows the kernel with dilations $d_k=1$, $d_k=2$, and $d_k=4$ together with the magnitude of the DFT of the three resulting kernels \(@fig-convolutional_neural_nets-aliasing_dilated_kernel_binomial\).
 
-![Dialed filters and their Fourier transforms.](figures/convolutional_neural_nets/aliasing_dilated_kernel_binomial.png){width="100%" #fig-convolutional_neural_nets-aliasing_dilated_kernel_binomial}
+![Dilated filters and their Fourier transforms.](figures/convolutional_neural_nets/aliasing_dilated_kernel_binomial.png){width="100%" #fig-convolutional_neural_nets-aliasing_dilated_kernel_binomial}
 
 When using the original binomial filter (which corresponds to $d_k=1$) the DFT shows that the filter is a low-pass filter. When applying dilation ($d_k=2$) the DFT changes and it is not unimodal anymore. It has now eight additional local maximum in high spatial frequencies. With $d_k=4$, the DFT reveals an even more complex frequency behavior. @fig-convolutional_neural_nets-dilated_blur_mit_dome_example shows one input image and the result of the dilated convolutions with the blur kernel, $b_{2,2}$, with dilations $d_k=1$, $d_k=2$, and $d_k=4$.
 
